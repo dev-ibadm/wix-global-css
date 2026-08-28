@@ -130,6 +130,9 @@ footer span {
     box-shadow: none !important;
 }
 
+[data-hook="dropdown-content"] {
+    padding: 0 !important;
+}
 
 /* THIS is the actual Wix box */
 #comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state] {

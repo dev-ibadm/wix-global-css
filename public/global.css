@@ -26,6 +26,10 @@ iframe html, iframe body {
    overflow: hidden !important;
 }
 
+footer span {
+    text-decoration: none !important;
+}
+
 /* =========================================================
    WIX CONTACT FORM — MATCH ORIGINAL HTML DESIGN
    Section: #comp-mtamajq2

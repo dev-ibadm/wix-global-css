@@ -1,7 +1,3 @@
-/* =========================
-   HOME HERO OVERLAY
-========================= */
-
 #comp-mt7evu7d #comp-mt7evu7k {
     position: relative !important;
 }
@@ -19,5 +15,9 @@
         rgba(0, 0, 0, 0.39) 100%
     );
     pointer-events: none;
-    z-index: 2;
+    z-index: auto;
+}
+
+iframe html, iframe body {
+   overflow: hidden !important;
 }

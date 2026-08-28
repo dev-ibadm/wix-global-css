@@ -128,24 +128,13 @@ footer span {
 
 
 /* THIS is the actual Wix box */
-#comp-mtamajq2 #comp-mtamajui
-[data-theme="box"][data-empty-state],
-
-#comp-mtamajq2 #comp-mtamajui
-[data-hook="core-input-root"] {
-
+#comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state] {
     min-height: 36px !important;
-
     background: #FAF8F4 !important;
-
     border: 1.5px solid #BEBAB3 !important;
     border-radius: 6px !important;
-
     box-shadow: none !important;
-
     overflow: hidden !important;
-
-    box-sizing: border-box !important;
 }
 
 

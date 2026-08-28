@@ -18,10 +18,444 @@
     z-index: auto;
 }
 
-a item-label {
+a .item-label {
     text-decoration-line: none !important;
 }
 
 iframe html, iframe body {
    overflow: hidden !important;
+}
+
+/* =========================================================
+   CONTACT / INQUIRY FORM
+   Exact styling based on original HTML landing page
+========================================================= */
+
+/* Section background */
+#comp-mtamajq2 {
+    background: #E8DFD0 !important;
+}
+
+
+/* ---------------------------------------------------------
+   FORM CARD
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui {
+    background: #FFFFFF !important;
+    border-radius: 20px !important;
+    padding: 44px !important;
+
+    box-shadow:
+        0 4px 24px rgba(45, 74, 50, 0.09) !important;
+
+    overflow: visible !important;
+}
+
+
+/* Remove Wix internal unwanted backgrounds */
+#comp-mtamajq2 #comp-mtamajui .sN4uTVR,
+#comp-mtamajq2 #comp-mtamajui fieldset,
+#comp-mtamajq2 #comp-mtamajui form {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   FORM FONT
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui,
+#comp-mtamajq2 #comp-mtamajui input,
+#comp-mtamajq2 #comp-mtamajui textarea,
+#comp-mtamajq2 #comp-mtamajui button {
+    font-family: "DM Sans", sans-serif !important;
+}
+
+
+/* ---------------------------------------------------------
+   LABELS
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui label,
+#comp-mtamajq2 #comp-mtamajui [class*="sdcwRYb"] {
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+
+    color: #1A1A1A !important;
+
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+
+    margin-bottom: 6px !important;
+}
+
+
+/* Hide Wix required * because original design doesn't show them */
+#comp-mtamajq2 #comp-mtamajui label span[aria-hidden="true"] {
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXT INPUT BOX WRAPPERS
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="text-field-root"]
+[data-theme="box"] {
+
+    background: #FAF8F4 !important;
+
+    border: 1.5px solid #BEBAB3 !important;
+    border-radius: 8px !important;
+
+    box-shadow: none !important;
+
+    min-height: 48px !important;
+
+    overflow: hidden !important;
+}
+
+
+/* actual inputs */
+#comp-mtamajq2 #comp-mtamajui input {
+    width: 100% !important;
+
+    min-height: 46px !important;
+
+    padding: 12px 16px !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: transparent !important;
+
+    color: #1A1A1A !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* placeholders */
+#comp-mtamajq2 #comp-mtamajui input::placeholder,
+#comp-mtamajq2 #comp-mtamajui textarea::placeholder {
+    color: #777777 !important;
+    opacity: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   REMOVE COUNTRY SELECTOR FROM PHONE
+   Original design only has normal phone input
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="country-selector-trigger"] {
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   DROPDOWNS
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="dropdown-base"] {
+
+    width: 100% !important;
+    min-height: 48px !important;
+
+    padding: 12px 16px !important;
+
+    background: #FAF8F4 !important;
+
+    border: 1.5px solid #BEBAB3 !important;
+    border-radius: 8px !important;
+
+    color: #1A1A1A !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+
+    text-align: left !important;
+
+    box-shadow: none !important;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+
+/* dropdown selected text */
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="dropdown-base-text"] {
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+
+    color: #1A1A1A !important;
+}
+
+
+/* Dropdown arrow */
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="dropdown-base"] svg {
+
+    width: 14px !important;
+    height: 14px !important;
+}
+
+
+/* ---------------------------------------------------------
+   DROPDOWN OPEN MENU
+   Wix can render this outside the form wrapper,
+   therefore deliberately not section-scoped.
+--------------------------------------------------------- */
+
+[id^="dropdown-options-container_"] {
+    background: #FFFFFF !important;
+
+    border: 1.5px solid #BEBAB3 !important;
+    border-radius: 8px !important;
+
+    box-shadow:
+        0 8px 24px rgba(45, 74, 50, 0.14) !important;
+
+    overflow: hidden !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+}
+
+
+/* Dropdown option */
+[id^="dropdown-options-container_"] [role="option"] {
+    padding: 12px 16px !important;
+
+    color: #1A1A1A !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+
+    background: #FFFFFF !important;
+
+    cursor: pointer !important;
+}
+
+
+/* hover + selected */
+[id^="dropdown-options-container_"] [role="option"]:hover,
+[id^="dropdown-options-container_"] [aria-selected="true"] {
+
+    background: #2D4A32 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTAREA
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-field-type="TEXT_AREA"]
+[data-hook^="form-field-"] > div {
+
+    background: #FAF8F4 !important;
+
+    border: 1.5px solid #BEBAB3 !important;
+    border-radius: 8px !important;
+
+    box-shadow: none !important;
+}
+
+
+#comp-mtamajq2 #comp-mtamajui textarea {
+
+    width: 100% !important;
+
+    min-height: 100px !important;
+
+    padding: 12px 16px !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: #FAF8F4 !important;
+
+    color: #1A1A1A !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+
+    resize: vertical !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   FILE UPLOAD
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-field-type="FILE_UPLOAD"] {
+
+    background: #FAF8F4 !important;
+
+    border: 1.5px dashed #BEBAB3 !important;
+    border-radius: 8px !important;
+
+    padding: 12px 16px !important;
+
+    color: #5A5A5A !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 14px !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   FOCUS
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="text-field-root"]
+[data-theme="box"]:focus-within,
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="dropdown-base"]:focus,
+
+#comp-mtamajq2 #comp-mtamajui textarea:focus {
+
+    border-color: #2D4A32 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(45, 74, 50, 0.10) !important;
+
+    outline: 0 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SUBMIT BUTTON
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="submit-button"] {
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 52px !important;
+
+    padding: 16px 20px !important;
+
+    background: #2D4A32 !important;
+    color: #FFFFFF !important;
+
+    border: 0 !important;
+    border-radius: 8px !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+
+    letter-spacing: 0.02em !important;
+
+    box-shadow: none !important;
+
+    cursor: pointer !important;
+}
+
+
+/* Button text */
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="submit-button"] span {
+
+    color: #FFFFFF !important;
+
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+
+
+/* add same arrow as original */
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="submit-button"] span:first-child::after {
+
+    content: " →";
+}
+
+
+/* hover */
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="submit-button"]:hover {
+
+    background: #233C28 !important;
+    opacity: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   REMOVE DEFAULT WIX FIELD SHADOWS / LINES
+--------------------------------------------------------- */
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook="text-field-root"],
+
+#comp-mtamajq2 #comp-mtamajui
+[data-hook^="dropdown-"],
+
+#comp-mtamajq2 #comp-mtamajui
+[data-field-type="TEXT_AREA"] {
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    #comp-mtamajq2 #comp-mtamajui {
+        padding: 28px 20px !important;
+        border-radius: 16px !important;
+    }
+
+    /*
+       Force Wix two-column rows into one column
+       on small screens
+    */
+    #comp-mtamajq2 #comp-mtamajui .GLWhGq {
+        grid-template-columns: 1fr !important;
+        display: block !important;
+    }
+
+    #comp-mtamajq2 #comp-mtamajui
+    .GLWhGq > div {
+
+        width: 100% !important;
+        grid-column: 1 / -1 !important;
+    }
+
 }

@@ -1,3 +1,3 @@
-h1 {
-    color: red !important;
+iframe body, iframe html {
+    overflow: hidden !important;
 }

@@ -79,16 +79,6 @@ footer span {
     padding: 0 !important;
 }
 
-
-/* =========================================================
-   FORM SPACING
-========================================================= */
-
-#comp-mtamajq2 #comp-mtamajui [data-hook="form-root"] > div > div {
-    margin-bottom: 14px !important;
-}
-
-
 /* Wix rows */
 #comp-mtamajq2 #comp-mtamajui .GLWhGq {
     column-gap: 12px !important;
@@ -104,14 +94,9 @@ footer span {
 #comp-mtamajq2 #comp-mtamajui label,
 #comp-mtamajq2 #comp-mtamajui
 [id^="form-field-label-"] {
-
-    font-family: "DM Sans", sans-serif !important;
-
     font-size: 10px !important;
     line-height: 1.2 !important;
-
     font-weight: 600 !important;
-
     color: #111 !important;
 
     letter-spacing: .04em !important;
@@ -189,8 +174,6 @@ footer span {
 
     color: #1A1A1A !important;
 
-    font-family: "DM Sans", sans-serif !important;
-
     font-size: 11px !important;
     line-height: 1.4 !important;
 
@@ -262,7 +245,6 @@ footer span {
 
     color: #1A1A1A !important;
 
-    font-family: "DM Sans", sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
 
@@ -274,7 +256,6 @@ footer span {
 #comp-mtamajq2 #comp-mtamajui [data-hook="dropdown-base-text"] {
     color: #1A1A1A !important;
 
-    font-family: "DM Sans", sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
 }
@@ -346,7 +327,6 @@ footer span {
 
     color: #1A1A1A !important;
 
-    font-family: "DM Sans", sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     line-height: 1.4 !important;
@@ -385,7 +365,6 @@ footer span {
 
     color: inherit !important;
 
-    font-family: "DM Sans", sans-serif !important;
     font-size: 14px !important;
 }
 
@@ -465,7 +444,6 @@ footer span {
 
     color: #1A1A1A !important;
 
-    font-family: "DM Sans", sans-serif !important;
 
     font-size: 11px !important;
     line-height: 1.5 !important;
@@ -565,7 +543,6 @@ footer span {
 
     color: #fff !important;
 
-    font-family: "DM Sans", sans-serif !important;
 
     font-size: 11px !important;
     font-weight: 600 !important;
@@ -584,7 +561,6 @@ footer span {
 
     color: #fff !important;
 
-    font-family: "DM Sans", sans-serif !important;
 
     font-size: 11px !important;
 

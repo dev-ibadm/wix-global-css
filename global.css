@@ -1,3 +1,25 @@
-h2 {
+/* =========================
+   HOME HERO OVERLAY
+========================= */
+
+#comp-mt7evu7d #comp-mt7evu7k {
+    position: relative !important;
+}
+
+#comp-mt7evu7d #comp-mt7evu7k::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.41) 0%,
+        rgba(0, 0, 0, 0.45) 50%,
+        rgba(0, 0, 0, 0.39) 100%
+    );
+    pointer-events: none;
+    z-index: 2;
+}h2 {
     color: red !important;
 }

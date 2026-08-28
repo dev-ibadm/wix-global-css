@@ -18,6 +18,10 @@
     z-index: auto;
 }
 
+button label {
+    text-decoration: none !important;
+}
+
 a .item-label {
     text-decoration-line: none !important;
 }

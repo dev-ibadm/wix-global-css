@@ -5,6 +5,7 @@
 
 button label {
     text-decoration: none !important;
+    letter-spacing: 0.01em !important;
 }
 
 a .item-label {

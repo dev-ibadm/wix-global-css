@@ -1,3 +1,24 @@
+::selection {
+    background: #C5CEBA;
+    color:#2D4A32;
+}
+
+button label {
+    text-decoration: none !important;
+}
+
+a .item-label {
+    text-decoration-line: none !important;
+}
+
+iframe html, iframe body {
+   overflow: hidden !important;
+}
+
+span {
+    text-decoration: none !important;
+}
+
 #comp-mt7evu7d #comp-mt7evu7k {
     position: relative !important;
 }
@@ -16,22 +37,6 @@
     );
     pointer-events: none;
     z-index: auto;
-}
-
-button label {
-    text-decoration: none !important;
-}
-
-a .item-label {
-    text-decoration-line: none !important;
-}
-
-iframe html, iframe body {
-   overflow: hidden !important;
-}
-
-footer span {
-    text-decoration: none !important;
 }
 
 /* =========================================================

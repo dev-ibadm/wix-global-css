@@ -16,11 +16,6 @@ a .item-label {
     text-decoration-line: none !important;
 }
 
-main section {
-	position: relative !important;
-	z-index: 999 !important;
-}
-
 iframe html, iframe body {
    overflow: hidden !important;
 }

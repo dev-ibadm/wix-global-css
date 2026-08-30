@@ -20,10 +20,6 @@ span {
     text-decoration: none !important;
 }
 
-._iframe_j35j1_7 {
-	position: fixed;
-}
-
 #comp-mt7evu7d #comp-mt7evu7k {
     position: relative !important;
 }
@@ -545,21 +541,14 @@ span {
     margin: 0 !important;
 
     background: #2D4A32 !important;
-
     border: 0 !important;
-
     border-radius: 6px !important;
 
     color: #fff !important;
-
-
     font-size: 11px !important;
     font-weight: 600 !important;
-
     line-height: 1.3 !important;
-
     letter-spacing: .02em !important;
-
     box-shadow: none !important;
 }
 
@@ -567,17 +556,12 @@ span {
 /* submit text */
 #comp-mtamajq2 #comp-mtamajui
 [data-hook="submit-button"] span {
-
     color: #fff !important;
-
-
     font-size: 11px !important;
-
     font-weight: 600 !important;
 }
 
 
-/* Arrow exactly like reference */
 #comp-mtamajq2 #comp-mtamajui
 [data-hook="submit-button"]
 .sezcxt9::after {
@@ -592,11 +576,6 @@ span {
     background: #233D29 !important;
 }
 
-
-/* =========================================================
-   REMOVE RANDOM WIX UNDERLINES / BORDERS
-========================================================= */
-
 #comp-mtamajq2 #comp-mtamajui
 .s__72lfJk,
 
@@ -605,21 +584,19 @@ span {
 
 #comp-mtamajq2 #comp-mtamajui
 .sigpKjl {
-
     box-shadow: none !important;
 }
 
+@media (max-width: 849px) {
+	._iframe_j35j1_7 {
+		position: fixed !important;
+	}
+}
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     #comp-mtamajq2 #comp-mtamajui {
-
         padding: 26px 18px !important;
-
         border-radius: 16px !important;
     }
 

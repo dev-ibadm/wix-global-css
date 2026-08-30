@@ -8,6 +8,10 @@ button label {
     letter-spacing: 0.01em !important;
 }
 
+._iframe_j35j1_7 {
+	position: fixed !important;
+}
+
 a .item-label {
     text-decoration-line: none !important;
 }
@@ -585,12 +589,6 @@ span {
 #comp-mtamajq2 #comp-mtamajui
 .sigpKjl {
     box-shadow: none !important;
-}
-
-@media (max-width: 849px) {
-	._iframe_j35j1_7 {
-		position: fixed !important;
-	}
 }
 
 @media (max-width: 768px) {

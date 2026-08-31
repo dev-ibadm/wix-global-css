@@ -51,6 +51,10 @@ span {
    Form:    #comp-mtamajui
 ========================================================= */
 
+.scwMXAj [data-hook="popover-content"] {
+  border: 0 !important;
+  box-shadow: none;
+}
 
 /* ---------- VARIABLES ---------- */
 #comp-mtamajq2 {
@@ -283,10 +287,8 @@ span {
 ========================================================= */
 
 [id^="dropdown-options-container_"] {
-    margin-top: 5px !important;
-
+    margin-top: 0 !important;
     padding: 0 !important;
-
     background: #FFFFFF !important;
 
     border: 1.5px solid #BEBAB3 !important;
@@ -330,8 +332,6 @@ span {
 
     background: #FFFFFF !important;
 
-    border: 0 !important;
-    border-radius: 0 !important;
 
     box-shadow: none !important;
 

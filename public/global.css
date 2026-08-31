@@ -10,6 +10,7 @@ button label {
 
 .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
 	position: fixed !important;
+	height: 65px;
 }
 
 a .item-label {
@@ -590,6 +591,12 @@ span {
 #comp-mtamajq2 #comp-mtamajui
 .sigpKjl {
     box-shadow: none !important;
+}
+
+@media (max-width: 849px) {
+	.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
+		height: 100%;
+	}
 }
 
 @media (max-width: 768px) {

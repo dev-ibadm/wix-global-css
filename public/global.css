@@ -8,11 +8,6 @@ button label {
     letter-spacing: 0.01em !important;
 }
 
-.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
-	position: fixed !important;
-	height: 65px;
-}
-
 a .item-label {
     text-decoration-line: none !important;
 }
@@ -491,11 +486,6 @@ span {
         0 0 0 1px rgba(45,74,50,.08) !important;
 }
 
-
-/* =========================================================
-   SUBMIT AREA — MUST BE FULL WIDTH
-========================================================= */
-
 /* Wix currently makes it 4/12 columns */
 #comp-mtamajq2 #comp-mtamajui
 [data-field-type="SUBMIT_BUTTON"] {
@@ -591,6 +581,13 @@ span {
 #comp-mtamajq2 #comp-mtamajui
 .sigpKjl {
     box-shadow: none !important;
+}
+
+@media (max-width: 1280px) {
+	.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
+		position: fixed !important;
+		height: 65px;
+	}
 }
 
 @media (max-width: 849px) {

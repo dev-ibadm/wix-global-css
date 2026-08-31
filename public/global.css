@@ -24,6 +24,39 @@ span {
     text-decoration: none !important;
 }
 
+/* =====================================================
+   SERVICES CARDS
+===================================================== */
+
+#comp-mt7j44ae #comp-mt9xt3an,
+#comp-mt7j44ae #comp-mt9wxaol,
+#comp-mt7j44ae #comp-mt9yb0ic,
+#comp-mt7j44ae #comp-mt9yb0uf {
+    cursor: pointer !important;
+    transition: transform 0.25s ease !important;
+}
+
+#comp-mt7j44ae #comp-mt9xt3bl,
+#comp-mt7j44ae #comp-mt9wxap6,
+#comp-mt7j44ae #comp-mt9yb0jh,
+#comp-mt7j44ae #comp-mt9yb0vx {
+    transition: box-shadow 0.25s ease !important;
+}
+
+#comp-mt7j44ae #comp-mt9xt3an:hover,
+#comp-mt7j44ae #comp-mt9wxaol:hover,
+#comp-mt7j44ae #comp-mt9yb0ic:hover,
+#comp-mt7j44ae #comp-mt9yb0uf:hover {
+    transform: translateY(-5px) !important;
+}
+
+#comp-mt7j44ae #comp-mt9xt3an:hover #comp-mt9xt3bl,
+#comp-mt7j44ae #comp-mt9wxaol:hover #comp-mt9wxap6,
+#comp-mt7j44ae #comp-mt9yb0ic:hover #comp-mt9yb0jh,
+#comp-mt7j44ae #comp-mt9yb0uf:hover #comp-mt9yb0vx {
+    box-shadow: 0 10px 28px rgba(45, 74, 50, 0.13) !important;
+}
+
 #comp-mt7evu7d #comp-mt7evu7k {
     position: relative !important;
 	margin-top: 62px;

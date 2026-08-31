@@ -3,6 +3,10 @@
     color:#2D4A32;
 }
 
+body {
+	overflow: hidden !important;
+}
+
 button label {
     text-decoration: none !important;
     letter-spacing: 0.01em !important;

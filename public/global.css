@@ -7,6 +7,10 @@ iframe body {
 	overflow: hidden !important;
 }
 
+footer p, footer a {
+   color: rgba(232,223,208,0.7) !important;
+}
+
 button label {
     text-decoration: none !important;
     letter-spacing: 0.01em !important;

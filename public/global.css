@@ -3,6 +3,10 @@
     color:#2D4A32;
 }
 
+#WIX_ADS {
+	display: none !important;
+}
+
 iframe body {
 	overflow: hidden !important;
 }

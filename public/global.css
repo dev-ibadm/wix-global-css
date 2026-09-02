@@ -635,6 +635,15 @@ span {
 	}
 }
 
+@media (max-width: 1024px) {
+	#comp-mt9yb0uf, #comp-mt9yb0ic, #comp-mt9wxaol, #comp-mt9xt3an {
+		display: block !important;
+		width: 80% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
 @media (max-width: 849px) {
 	.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
 		height: 100%;

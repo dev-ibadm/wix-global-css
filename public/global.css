@@ -137,7 +137,6 @@ span {
   padding: 0 !important;
 }
 
-/* Original layout uses gap-4 + mb-4 = 16px */
 #comp-mtamajq2 #comp-mtamajui .GLWhGq {
   column-gap: 16px !important;
   row-gap: 16px !important;
@@ -147,13 +146,7 @@ span {
   margin: 0 !important;
 }
 
-/* =========================================================
-   LABELS — exact original: 12px / 600 / .04em / 6px gap
-========================================================= */
-
-#comp-mtamajq2 #comp-mtamajui .shszO9W,
-#comp-mtamajq2 #comp-mtamajui label,
-#comp-mtamajq2 #comp-mtamajui [id^="form-field-label-"] {
+#comp-mtamajq2 #comp-mtamajui .shszO9W, #comp-mtamajq2 #comp-mtamajui label, #comp-mtamajq2 #comp-mtamajui [id^="form-field-label-"] {
   font-family: "DM Sans", sans-serif !important;
   font-size: 12px !important;
   line-height: 1.2 !important;
@@ -161,21 +154,13 @@ span {
   color: #1A1A1A !important;
   letter-spacing: 0.04em !important;
   text-transform: uppercase !important;
-  margin: 0 0 6px !important;
+  margin: 0 0 -10px !important;
   padding: 0 !important;
 }
 
-/* Hide Wix required stars to match reference */
 #comp-mtamajq2 #comp-mtamajui .sHbjjkq {
   display: none !important;
 }
-
-/* =========================================================
-   TEXT INPUTS
-   Original visual box:
-   1.5px border / #FAF8F4 / radius 8
-   16px horizontal + 12px vertical padding / 14px text
-========================================================= */
 
 #comp-mtamajq2 #comp-mtamajui [data-hook="text-field-root"] {
   border: 0 !important;

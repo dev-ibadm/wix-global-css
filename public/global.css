@@ -178,12 +178,10 @@ span {
   box-shadow: none !important;
 }
 
-#comp-mtamajq2 #comp-mtamajui [data-hook="text-field-root"] input,
-#comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state] input {
+#comp-mtamajq2 #comp-mtamajui [data-hook="text-field-root"] input, #comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state] input {
   width: 100% !important;
   height: 48px !important;
   min-height: 48px !important;
-  padding: 12px 16px !important;
   margin: 0 !important;
 
   border: 1.5px solid #BEBAB3 !important;
@@ -387,31 +385,20 @@ span {
 #comp-mtamajq2 #comp-mtamajui textarea {
   display: block !important;
   width: 100% !important;
-
   height: 100px !important;
   min-height: 100px !important;
-
-  padding: 12px 16px !important;
-
   background: #FAF8F4 !important;
   border: 0 !important;
   outline: 0 !important;
-
   color: #1A1A1A !important;
-
   font-family: "DM Sans", sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
-
   resize: vertical !important;
   box-shadow: none !important;
   box-sizing: border-box !important;
 }
-
-/* =========================================================
-   FOCUS
-========================================================= */
 
 #comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state]:focus-within,
 #comp-mtamajq2 #comp-mtamajui [data-hook="core-input-root"]:focus-within,
@@ -421,10 +408,6 @@ span {
   outline: none !important;
   box-shadow: 0 0 0 1px rgba(45, 74, 50, 0.08) !important;
 }
-
-/* =========================================================
-   SUBMIT BUTTON — exact original
-========================================================= */
 
 #comp-mtamajq2 #comp-mtamajui [data-field-type="SUBMIT_BUTTON"] {
   grid-column: 1 / span 12 !important;
@@ -443,26 +426,19 @@ span {
 
 #comp-mtamajq2 #comp-mtamajui [data-hook="submit-button"] {
   display: flex !important;
-
   width: 100% !important;
   max-width: none !important;
-
   min-height: 50px !important;
   height: 50px !important;
-
   justify-content: center !important;
   align-items: center !important;
-
   padding: 16px 20px !important;
   margin: 0 !important;
-
   background: #2D4A32 !important;
   color: #FFFFFF !important;
-
   border: 0 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-
   font-family: "DM Sans", sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;

@@ -645,9 +645,9 @@ span {
 }
 
 @media (max-width: 849px) {
-	.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
-		height: 100%;
-	}
+  .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7.mobile-menu-open {
+    height: 100dvh !important;
+  }
 }
 
 @media (max-width: 768px) {

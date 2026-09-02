@@ -479,6 +479,12 @@ span {
 	}
 }
 
+@media (min-width: 490px) and (max-width: 1024px) {
+  ._root_j35j1_2 {
+    height: 68px;
+  }
+}
+
 @media (max-width: 1024px) {
 	#comp-mt9yb0uf, #comp-mt9yb0ic, #comp-mt9wxaol, #comp-mt9xt3an {
 		display: block !important;

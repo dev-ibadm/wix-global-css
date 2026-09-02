@@ -32,6 +32,11 @@ span {
     text-decoration: none !important;
 }
 
+#comp-mthdtkyh {
+	display: block;
+	width: fit-content;
+}
+
 /* =====================================================
    SERVICES CARDS
 ===================================================== */

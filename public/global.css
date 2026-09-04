@@ -369,22 +369,28 @@ span {
   box-shadow: none !important;
 }
 
+.sTgZ1Db {
+	padding: 0 !important;
+}
+
 #comp-mtamajq2 #comp-mtamajui textarea {
   display: block !important;
   width: 100% !important;
   height: 100px !important;
   min-height: 100px !important;
   background: #FAF8F4 !important;
-  border: 0 !important;
+  border: 1.5px solid #BEBAB3 !important;
   outline: 0 !important;
   color: #1A1A1A !important;
   font-family: "DM Sans", sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
-  resize: vertical !important;
+  resize: none;
   box-shadow: none !important;
   box-sizing: border-box !important;
+  border-radius: 8px !important;
+  padding: 12px 14px;
 }
 
 #comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state]:focus-within,

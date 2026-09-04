@@ -477,6 +477,9 @@ span {
 }
 
 @media (max-width: 1024px) {
+	#comp-mtamajq2 #comp-mtamajui .shszO9W, #comp-mtamajq2 #comp-mtamajui label, #comp-mtamajq2 #comp-mtamajui [id^="form-field-label-"] {
+		margin: 0 !important;
+	}
 	#comp-mt7j5xc7, #comp-mt7j44bu, #comp-mt7j44b11, #comp-mt9yb0uf, #comp-mt9yb0ic, #comp-mt9wxaol, #comp-mt9xt3an {
 		display: block !important;
 		width: 93% !important;

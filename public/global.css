@@ -477,6 +477,10 @@ span {
 }
 
 @media (max-width: 1024px) {
+	#comp-mta7njj2 {
+		display: block !important;
+		height: 490px !important;
+	}
 	#comp-mtamajq2 #comp-mtamajui .shszO9W, #comp-mtamajq2 #comp-mtamajui label, #comp-mtamajq2 #comp-mtamajui [id^="form-field-label-"] {
 		margin: 0 !important;
 	}

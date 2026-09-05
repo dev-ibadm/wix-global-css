@@ -464,7 +464,7 @@ span {
 
 
 @media (max-width: 1280px) {
-	._root_j35j1_2 {
+	header ._root_j35j1_2 {
 		display: block;
         height: fit-content !important;
 	}

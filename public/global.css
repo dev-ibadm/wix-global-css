@@ -83,7 +83,7 @@ span {
 
 #comp-mt7evu7d #comp-mt7evu7k {
 	position: relative !important;
-	margin-top: 62px;
+	margin-top: 52px;
 }
 
 #comp-mt7evu7d #comp-mt7evu7k::after {
@@ -464,9 +464,13 @@ span {
 
 
 @media (max-width: 1280px) {
+	._root_j35j1_2 {
+		display: block;
+        height: fit-content !important;
+	}
 	.comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
 		position: fixed !important;
-		height: 65px;
+		height: 58px;
 	}
 }
 
@@ -493,12 +497,6 @@ span {
 }
 
 @media (max-width: 849px) {
-	 .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
-	height: 54px;
-  }
-	#comp-mt7evu7d #comp-mt7evu7k {
-  margin-top: 54px;
-}
   .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7.mobile-menu-open {
 	height: 100dvh !important;
   }

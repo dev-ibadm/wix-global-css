@@ -493,6 +493,12 @@ span {
 }
 
 @media (max-width: 849px) {
+	 .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7 {
+	height: 54px;
+  }
+	#comp-mt7evu7d #comp-mt7evu7k {
+  margin-top: 54px;
+}
   .comp-mb7ogqrp_r_comp-mdr142kt ._iframe_j35j1_7.mobile-menu-open {
 	height: 100dvh !important;
   }
@@ -509,15 +515,12 @@ span {
 
 	/* 2 columns -> 1 */
 	#comp-mtamajq2 #comp-mtamajui .GLWhGq {
-
 		display: block !important;
 	}
 
 	#comp-mtamajq2 #comp-mtamajui
 	.GLWhGq > div {
-
 		width: 100% !important;
-
 		margin-bottom: 6px !important;
 	}
 

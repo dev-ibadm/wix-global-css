@@ -474,12 +474,6 @@ span {
 	}
 }
 
-@media (min-width: 490px) and (max-width: 1024px) {
-  ._root_j35j1_2 {
-	height: 68px !important;
-  }
-}
-
 @media (max-width: 1024px) {
 	#comp-mta7njj2 {
 		display: block !important;

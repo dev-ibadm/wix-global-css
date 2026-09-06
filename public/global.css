@@ -225,6 +225,10 @@ span {
   box-shadow: none !important;
 }
 
+#comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state]:focus-within {
+  box-shadow: none !important;
+}
+
 #comp-mtamajq2 #comp-mtamajui [data-hook="text-field-root"] input, #comp-mtamajq2 #comp-mtamajui [data-theme="box"][data-empty-state] input {
   width: 100% !important;
   height: 48px !important;

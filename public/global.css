@@ -61,11 +61,17 @@ span {
   color: #333 !important;
 }
 
+#comp-mtaluk7n [data-hook="form-field-315df3f1-ea4b-45ff-1d41-3438a47c19e1"] {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+}
+
 #comp-mtaluk7n [data-hook="submit-button"] {
   color: #ffffff !important;
   border-radius: 6px !important;
   border: none !important;
-  padding: 12px 28px !important;
+  padding: 12px 25px !important;
   height: auto !important;
   background: #2D4A32 !important;
 }

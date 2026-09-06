@@ -39,34 +39,33 @@ span {
 .wix-presets-wrapper w-4190f51c-3836-49f6-8114-96219c165b29 {
 	display: block !important;
 }
-
 #comp-mthdtkyh {
 	width: fit-content !important;
 }
-
 .sT4cyzB {
 	font-size: 12px !important;
 }
-
 .sff9IR8 {
   padding-right: 0 !important;
   border: 0 !important;
 }
-
 #comp-mtaluk7n input[data-theme="box"] {
   background-color: rgb(255, 255, 255) !important;
   border: 1.5px solid #BEBAB3 !important;
   border-radius: 6px !important;
   padding: 9px 0 !important;
   color: #333 !important;
+  font-size: 14px !important;
 }
-
+#comp-mtaluk7n input[data-theme="box"]::placeholder {
+  color: #8a8a8a !important;
+  font-size: 14px !important;
+}
 #comp-mtaluk7n [data-hook="form-field-315df3f1-ea4b-45ff-1d41-3438a47c19e1"] {
   display: block;
   width: fit-content;
-  margin-left: auto;
+  margin-left: 16px;
 }
-
 #comp-mtaluk7n [data-hook="submit-button"] {
   color: #ffffff !important;
   border-radius: 6px !important;
@@ -75,11 +74,9 @@ span {
   height: auto !important;
   background: #2D4A32 !important;
 }
-
 #comp-mtaluk7n [data-hook="submit-button"] span {
   color: #ffffff !important;
 }
-
 #comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
   border: 1.5px solid #333 !important;
   background-color: transparent !important;
@@ -87,10 +84,15 @@ span {
   width: 18px !important;
   height: 18px !important;
 }
-
 #comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw {
   background-color: #2D4A32 !important;
   border-color: #2D4A32 !important;
+}
+#comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw svg,
+#comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+  color: #ffffff !important;
 }
 
 #comp-mt7j44ae #comp-mt9xt3an,

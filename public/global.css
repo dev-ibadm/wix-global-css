@@ -65,8 +65,9 @@ span {
   color: #ffffff !important;
   border-radius: 6px !important;
   border: none !important;
-  padding: 14px 28px !important;
+  padding: 12px 28px !important;
   height: auto !important;
+  background: #2D4A32 !important;
 }
 
 #comp-mtaluk7n [data-hook="submit-button"] span {

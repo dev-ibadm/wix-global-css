@@ -63,7 +63,7 @@ span {
 
 /* EMAIL + JOIN ROW */
 #comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq {
-	grid-template-columns: minmax(0, 1fr) 78px !important;
+	grid-template-columns: minmax(0, 1fr) max-content !important;
 	column-gap: 12px !important;
 	width: 100% !important;
 }
@@ -72,20 +72,28 @@ span {
 	grid-column: 1 !important;
 	grid-row: 2 !important;
 	width: 100% !important;
+	min-width: 0 !important;
 }
 
-#comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq > div:nth-child(4) {
-	grid-column: 2 !important;
-	grid-row: 2 !important;
-	width: 78px !important;
-	margin: 0 !important;
+#comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"],
+#comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"] > div,
+#comp-mtaluk7n [data-hook="text-field-root"],
+#comp-mtaluk7n [data-hook="text-field-root"] > div,
+#comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"] .sPNxGfn,
+#comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"] .sff9IR8 {
+	width: 100% !important;
+	max-width: none !important;
+	min-width: 0 !important;
 }
 
 
 /* EMAIL INPUT */
 #comp-mtaluk7n input[data-theme="box"] {
 	width: 100% !important;
+	max-width: none !important;
+	min-width: 0 !important;
 	height: 49px !important;
+	box-sizing: border-box !important;
 	background-color: #ffffff !important;
 	border: 1.5px solid #BEBAB3 !important;
 	border-radius: 6px !important;
@@ -100,8 +108,10 @@ span {
 }
 
 
-/* JOIN */
+/* JOIN BUTTON - SAME SIZE / SAME RIGHT POSITION */
 #comp-mtaluk7n [data-hook="form-field-315df3f1-ea4b-45ff-1d41-3438a47c19e1"] {
+	grid-column: 2 !important;
+	grid-row: 2 !important;
 	width: 78px !important;
 	margin: 0 !important;
 }
@@ -197,6 +207,9 @@ span {
 	stroke: #ffffff !important;
 	color: #ffffff !important;
 }
+
+/* card */
+
 #comp-mt7j44ae #comp-mt9xt3an,
 #comp-mt7j44ae #comp-mt9wxaol,
 #comp-mt7j44ae #comp-mt9yb0ic,

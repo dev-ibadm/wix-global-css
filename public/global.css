@@ -3,6 +3,10 @@
 	color:#2D4A32;
 }
 
+iframe body {
+	overflow: hidden !important;
+}
+
 #comp-mt9yjfgk {
 	display: none !important;
 }
@@ -22,6 +26,10 @@ button label {
 
 a .item-label {
 	text-decoration-line: none !important;
+}
+
+iframe html, iframe body {
+   overflow: hidden !important;
 }
 
 span {
@@ -590,6 +598,27 @@ span {
   background: #233D29 !important;
 }
 
+
+#comp-mtamajq2 #comp-mtamajui [data-field-type="SUBMIT_BUTTON"]::after {
+  content: "Spam protected";
+  display: block !important;
+  width: max-content !important;
+  margin: 12px auto 0 !important;
+  padding-left: 18px !important;
+  background-image: url("https://static.wixstatic.com/media/c584e4_8c9f29a8413443be91a9626b2022819a~mv2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 14px 14px !important;
+  color: #5A5A5A !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  box-sizing: border-box !important;
+}
+
 #comp-mtamajq2 #comp-mtamajui .s__72lfJk,
 #comp-mtamajq2 #comp-mtamajui .smyXERm,
 #comp-mtamajq2 #comp-mtamajui .sigpKjl {
@@ -631,6 +660,9 @@ span {
 }
 
 @media (max-width: 768px) {
+	#comp-mtamajq2 #comp-mtamajui [data-hook="submit-button"] {
+		margin-top: 14px !important;
+	}
 	.ckHV4G {
 		gap: 0 !important;
 	}
@@ -647,7 +679,24 @@ span {
 	#comp-mtamajq2 #comp-mtamajui
 	.GLWhGq > div {
 		width: 100% !important;
-		margin-bottom: 6px !important;
+		margin-bottom: 0 !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui
+	.GLWhGq > div:nth-child(odd):not(:empty) {
+		margin-bottom: 7px !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui
+	.GLWhGq > div:nth-child(even)[data-field-type]:not([data-field-type="SUBMIT_BUTTON"]) {
+		margin-bottom: 16px !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui
+	.GLWhGq > div:empty,
+	#comp-mtamajq2 #comp-mtamajui
+	.GLWhGq > [data-field-type="SUBMIT_BUTTON"] {
+		margin-bottom: 0 !important;
 	}
 
 
@@ -722,12 +771,6 @@ span {
 		fill: currentColor !important;
 	}
 
-	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] select {
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237A806F' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
-		background-repeat: no-repeat !important;
-		background-position: right 16px center !important;
-		background-size: 14px 14px !important;
-	}
 
 	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="dropdown-base"]:focus,
 	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] button[role="combobox"]:focus,
@@ -738,3 +781,131 @@ span {
 	}
 
 }
+
+@media (max-width: 768px) {
+
+	/* Contact form: keep Wix chevron, only correct its position */
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="dropdown-base"] {
+		position: relative !important;
+		padding-right: 44px !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="suffix-icon"] {
+		position: absolute !important;
+		right: 16px !important;
+		top: 50% !important;
+		width: 14px !important;
+		height: 14px !important;
+		margin: 0 !important;
+		transform: translateY(-50%) !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		pointer-events: none !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="suffix-icon"] svg {
+		width: 14px !important;
+		height: 14px !important;
+		margin: 0 !important;
+	}
+
+
+	/* Newsletter: use full mobile width and remove the excessive left offset */
+	#comp-mtaluk7n #comp-mtpmzy1k {
+		width: 100% !important;
+		max-width: none !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		box-sizing: border-box !important;
+		translate: 0 -20px !important;
+	}
+
+	#comp-mtaluk7n #comp-mtpmzy1k .comp-mtpmzy1k_ooi,
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="tpa-components-provider"],
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="Form-wrapper"],
+	#comp-mtaluk7n #comp-mtpmzy1k form,
+	#comp-mtaluk7n #comp-mtpmzy1k fieldset,
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="form-root"],
+	#comp-mtaluk7n #comp-mtpmzy1k .ckHV4G {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	#comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq {
+		width: 100% !important;
+		grid-template-columns: minmax(0, 1fr) max-content !important;
+		column-gap: 12px !important;
+	}
+
+	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
+		width: 100% !important;
+		grid-template-columns: 1fr !important;
+		margin-top: 16px !important;
+	}
+
+	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq > div:nth-child(2),
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] {
+		width: 100% !important;
+		min-width: 0 !important;
+		display: flex !important;
+		justify-content: flex-start !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] > div,
+	#comp-mtaluk7n [data-hook="checkbox-wrapper"] {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] {
+		display: flex !important;
+		align-items: flex-start !important;
+		justify-content: flex-start !important;
+		gap: 10px !important;
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
+		flex: 0 0 18px !important;
+		margin-top: 1px !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sbs_25L {
+		display: block !important;
+		flex: 1 1 0 !important;
+		width: auto !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-hook="label-wrapper"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"] > div,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] .ntwJb,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] .QuNML,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] p {
+		display: block !important;
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p,
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p span {
+		margin: 0 !important;
+		white-space: normal !important;
+		word-break: normal !important;
+		overflow-wrap: normal !important;
+		font-size: 13px !important;
+		line-height: 1.35 !important;
+	}
+}
+

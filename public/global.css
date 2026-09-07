@@ -7,6 +7,10 @@ iframe body {
 	overflow: hidden !important;
 }
 
+#comp-mt9yjfgk {
+	display: none !important;
+}
+
 footer p, footer a {
    color: rgba(232,223,208,0.7) !important;
 }

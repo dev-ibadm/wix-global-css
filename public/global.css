@@ -788,11 +788,76 @@ span {
 }
 
 @media (max-width: 768px) {
+
+	/* Contact form: keep Wix chevron, only correct its position */
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="dropdown-base"] {
+		position: relative !important;
+		padding-right: 44px !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="suffix-icon"] {
+		position: absolute !important;
+		right: 16px !important;
+		top: 50% !important;
+		width: 14px !important;
+		height: 14px !important;
+		margin: 0 !important;
+		transform: translateY(-50%) !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		pointer-events: none !important;
+	}
+
+	#comp-mtamajq2 #comp-mtamajui [data-field-type="DROPDOWN"] [data-hook="suffix-icon"] svg {
+		width: 14px !important;
+		height: 14px !important;
+		margin: 0 !important;
+	}
+
+
+	/* Newsletter: use full mobile width and remove the excessive left offset */
+	#comp-mtaluk7n #comp-mtpmzy1k {
+		width: 100% !important;
+		max-width: none !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		box-sizing: border-box !important;
+		translate: 0 -20px !important;
+	}
+
+	#comp-mtaluk7n #comp-mtpmzy1k .comp-mtpmzy1k_ooi,
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="tpa-components-provider"],
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="Form-wrapper"],
+	#comp-mtaluk7n #comp-mtpmzy1k form,
+	#comp-mtaluk7n #comp-mtpmzy1k fieldset,
+	#comp-mtaluk7n #comp-mtpmzy1k [data-hook="form-root"],
+	#comp-mtaluk7n #comp-mtpmzy1k .ckHV4G {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	#comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq {
+		width: 100% !important;
+		grid-template-columns: minmax(0, 1fr) max-content !important;
+		column-gap: 12px !important;
+	}
+
 	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
+		width: 100% !important;
+		grid-template-columns: 1fr !important;
 		margin-top: 16px !important;
 	}
 
+	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq > div:nth-child(2),
 	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] {
+		width: 100% !important;
+		min-width: 0 !important;
+		display: flex !important;
 		justify-content: flex-start !important;
 	}
 
@@ -804,30 +869,48 @@ span {
 	}
 
 	#comp-mtaluk7n [data-hook="checkbox-core"] {
-		width: 100% !important;
-		max-width: 100% !important;
-		min-width: 0 !important;
-		justify-content: flex-start !important;
+		display: flex !important;
 		align-items: flex-start !important;
-	}
-
-	#comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
-		margin-top: 2px !important;
-	}
-
-	#comp-mtaluk7n [data-hook="label-wrapper"],
-	#comp-mtaluk7n [data-hook="ricos-viewer"],
-	#comp-mtaluk7n [data-hook="ricos-viewer"] > div,
-	#comp-mtaluk7n [data-hook="ricos-viewer"] p {
+		justify-content: flex-start !important;
+		gap: 10px !important;
 		width: 100% !important;
 		max-width: none !important;
 		min-width: 0 !important;
 	}
 
-	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p {
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
+		flex: 0 0 18px !important;
+		margin-top: 1px !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sbs_25L {
+		display: block !important;
+		flex: 1 1 0 !important;
+		width: auto !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-hook="label-wrapper"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"] > div,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] .ntwJb,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] .QuNML,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] p {
+		display: block !important;
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p,
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p span {
+		margin: 0 !important;
 		white-space: normal !important;
-		overflow-wrap: normal !important;
 		word-break: normal !important;
+		overflow-wrap: normal !important;
+		font-size: 13px !important;
+		line-height: 1.35 !important;
 	}
 }
 

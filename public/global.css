@@ -123,13 +123,9 @@ span {
 	color: #ffffff !important;
 }
 
-
-/* CHECKBOX ROW */
 #comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
-	display: grid !important;
 	grid-template-columns: 1fr !important;
-	width: 100% !important;
-	margin-top: 16px !important;
+	margin-top:  !important;
 }
 
 #comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq > div:nth-child(2) {

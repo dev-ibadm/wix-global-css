@@ -39,60 +39,146 @@ span {
 .wix-presets-wrapper w-4190f51c-3836-49f6-8114-96219c165b29 {
 	display: block !important;
 }
+
 #comp-mthdtkyh {
 	width: fit-content !important;
 }
+
 .sT4cyzB {
 	font-size: 12px !important;
 }
+
 .sff9IR8 {
-  padding-right: 0 !important;
-  border: 0 !important;
+	padding-right: 0 !important;
+	border: 0 !important;
 }
+
+
+/* FORM FULL WIDTH */
+#comp-mtaluk7n form,
+#comp-mtaluk7n fieldset,
+#comp-mtaluk7n [data-hook="form-root"],
+#comp-mtaluk7n .ckHV4G {
+	width: 100% !important;
+}
+
+
+/* EMAIL + BUTTON ROW */
+#comp-mtaluk7n .ckHV4G > div > .GLWhGq:first-child {
+	grid-template-columns: minmax(0, 1fr) 78px !important;
+	column-gap: 12px !important;
+}
+
+
+/* EMAIL FIELD */
+#comp-mtaluk7n .ckHV4G > div > .GLWhGq:first-child > div:nth-child(2) {
+	grid-column: 1 !important;
+	grid-row: 2 !important;
+	width: 100% !important;
+}
+
+
+/* BUTTON FIELD */
+#comp-mtaluk7n .ckHV4G > div > .GLWhGq:first-child > div:nth-child(4) {
+	grid-column: 2 !important;
+	grid-row: 2 !important;
+	width: 78px !important;
+	margin: 0 !important;
+}
+
+
 #comp-mtaluk7n input[data-theme="box"] {
-  background-color: rgb(255, 255, 255) !important;
-  border: 1.5px solid #BEBAB3 !important;
-  border-radius: 6px !important;
-  padding: 9px 0 !important;
-  color: #333 !important;
-  font-size: 14px !important;
+	width: 100% !important;
+	height: 49px !important;
+	background-color: #ffffff !important;
+	border: 1.5px solid #BEBAB3 !important;
+	border-radius: 6px !important;
+	padding: 0 14px !important;
+	color: #333333 !important;
+	font-size: 14px !important;
 }
+
 #comp-mtaluk7n input[data-theme="box"]::placeholder {
-  color: #8a8a8a !important;
-  font-size: 14px !important;
+	color: #8a8a8a !important;
+	font-size: 14px !important;
 }
+
+
+/* JOIN BUTTON */
 #comp-mtaluk7n [data-hook="form-field-315df3f1-ea4b-45ff-1d41-3438a47c19e1"] {
-  display: block;
-  width: fit-content;
-  margin-left: 16px;
+	display: block !important;
+	width: 78px !important;
+	margin: 0 !important;
 }
+
 #comp-mtaluk7n [data-hook="submit-button"] {
-  color: #ffffff !important;
-  border-radius: 6px !important;
-  border: none !important;
-  padding: 12px 25px !important;
-  height: auto !important;
-  background: #2D4A32 !important;
+	width: 78px !important;
+	height: 49px !important;
+	min-width: 78px !important;
+	padding: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	color: #ffffff !important;
+	border-radius: 6px !important;
+	border: none !important;
+	background: #2D4A32 !important;
 }
+
 #comp-mtaluk7n [data-hook="submit-button"] span {
-  color: #ffffff !important;
+	color: #ffffff !important;
 }
+
+
+/* CHECKBOX ROW */
+#comp-mtaluk7n .ckHV4G > div > .GLWhGq:nth-child(2) {
+	margin-top: 16px !important;
+}
+
+#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	width: 100% !important;
+}
+
+#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] > div {
+	width: fit-content !important;
+}
+
+#comp-mtaluk7n [data-hook="checkbox-core"] {
+	display: flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+}
+
+#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p,
+#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p span {
+	font-size: 13px !important;
+	line-height: 1.25 !important;
+}
+
+
+/* CHECKBOX */
 #comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
-  border: 1.5px solid #333 !important;
-  background-color: transparent !important;
-  border-radius: 3px !important;
-  width: 18px !important;
-  height: 18px !important;
+	border: 1.5px solid #333333 !important;
+	background-color: transparent !important;
+	border-radius: 3px !important;
+	width: 18px !important;
+	height: 18px !important;
+	flex: 0 0 18px !important;
 }
+
 #comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw {
-  background-color: #2D4A32 !important;
-  border-color: #2D4A32 !important;
+	background-color: #2D4A32 !important;
+	border-color: #2D4A32 !important;
 }
+
 #comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw svg,
 #comp-mtaluk7n [data-hook="checkbox-wrapper"][data-checked="true"] .sN2iaUw path {
-  fill: #ffffff !important;
-  stroke: #ffffff !important;
-  color: #ffffff !important;
+	fill: #ffffff !important;
+	stroke: #ffffff !important;
+	color: #ffffff !important;
 }
 
 #comp-mt7j44ae #comp-mt9xt3an,

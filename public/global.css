@@ -786,3 +786,48 @@ span {
 	}
 
 }
+
+@media (max-width: 768px) {
+	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
+		margin-top: 16px !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] {
+		justify-content: flex-start !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] > div,
+	#comp-mtaluk7n [data-hook="checkbox-wrapper"] {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		justify-content: flex-start !important;
+		align-items: flex-start !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
+		margin-top: 2px !important;
+	}
+
+	#comp-mtaluk7n [data-hook="label-wrapper"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"],
+	#comp-mtaluk7n [data-hook="ricos-viewer"] > div,
+	#comp-mtaluk7n [data-hook="ricos-viewer"] p {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: 0 !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p {
+		white-space: normal !important;
+		overflow-wrap: normal !important;
+		word-break: normal !important;
+	}
+}
+

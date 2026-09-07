@@ -665,6 +665,9 @@ span {
 }
 
 @media (max-width: 768px) {
+	#comp-mtamajq2 #comp-mtamajui [data-hook="submit-button"] {
+		margin-top: 14px !important;
+	}
 	.ckHV4G {
 		gap: 0 !important;
 	}

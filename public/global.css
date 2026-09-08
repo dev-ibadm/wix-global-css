@@ -49,11 +49,6 @@ span {
 	border: 0 !important;
 }
 
-/* =========================================================
-   NEWSLETTER FORM — stable Wix grid mapping
-   Keeps Wix component/section geometry untouched
-========================================================= */
-
 #comp-mtaluk7n form,
 #comp-mtaluk7n fieldset,
 #comp-mtaluk7n [data-hook="form-root"],
@@ -753,6 +748,15 @@ span {
 @media (max-width: 768px) {
 	#comp-mtamajq2 #comp-mtamajui [data-hook="submit-button"] {
 		margin-top: 14px !important;
+	}
+	#comp-mtpmzy1k {
+	width: 92% !important;
+  display: block !important;
+  margin: auto !important;
+}
+	.sN4uTVR {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 	#comp-mtamajq2 #comp-mtamajui .ckHV4G {
 		gap: 0 !important;

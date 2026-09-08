@@ -907,3 +907,17 @@ span {
 
 
 }
+
+@media (max-width: 360px) {
+	#comp-mtaluk7n [data-hook="checkbox-core"] {
+		width: fit-content !important;
+		max-width: 100% !important;
+		margin-inline: auto !important;
+	}
+
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sbs_25L {
+		width: auto !important;
+		flex: 0 1 auto !important;
+	}
+}
+

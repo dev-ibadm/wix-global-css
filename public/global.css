@@ -969,10 +969,8 @@ span {
 
 	/* Checkbox occupies the complete row */
 	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
-		display: grid !important;
-		width: 100% !important;
 		grid-template-columns: minmax(0, 1fr) !important;
-		margin-top: 14px !important;
+		margin-top: 0 !important;
 	}
 
 	#comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq > div {

@@ -435,26 +435,6 @@ span {
   font-weight: 400 !important;
 }
 
-/* =========================================================
-   PHONE — original is a plain phone input
-========================================================= */
-
-#comp-mtamajq2 #comp-mtamajui [data-hook="country-selector-trigger"],
-#comp-mtamajq2 #comp-mtamajui [data-hook="prefix"] {
-  display: none !important;
-}
-
-#comp-mtamajq2 #comp-mtamajui
-[data-field-type="CONTACTS_PHONE"]
-[data-hook^="form-field-"]
-[data-field-type] input {
-  padding: 12px 16px !important;
-}
-
-/* =========================================================
-   DROPDOWNS — exact original closed-field dimensions
-========================================================= */
-
 [data-hook="dropdown-content"] {
   padding: 0 !important;
 }

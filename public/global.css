@@ -909,10 +909,19 @@ span {
 }
 
 @media (max-width: 360px) {
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] {
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] > div,
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] [data-hook="checkbox-wrapper"],
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] .sCoF72o,
 	#comp-mtaluk7n [data-hook="checkbox-core"] {
 		width: fit-content !important;
 		max-width: 100% !important;
-		margin-inline: auto !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
 	}
 
 	#comp-mtaluk7n [data-hook="checkbox-core"] .sbs_25L {

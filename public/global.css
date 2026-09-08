@@ -55,7 +55,6 @@ span {
 	box-sizing: border-box !important;
 }
 
-/* EMAIL + JOIN: keep two real grid columns and remap Wix's inline 12-col items */
 #comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq {
 	display: grid !important;
 	width: 100% !important;
@@ -124,7 +123,6 @@ span {
 	font-size: 14px !important;
 }
 
-/* Validation / suggestion text must use the full email-column width */
 #comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"] [data-hook^="field-error-"],
 #comp-mtaluk7n [data-field-type="CONTACTS_EMAIL"] [data-hook="email-mistype-suggestion"] {
 	width: 100% !important;
@@ -324,9 +322,16 @@ span {
 }
 
 /* =========================================================
-   CONTACT FORM — MATCH ORIGINAL LANDING PAGE
-   Upload field intentionally left untouched
+   CONTACT FORM 
 ========================================================= */
+
+[data-hook="submit-form-success-message"] {
+  margin-top: 16px !important;
+}
+
+[data-hook="submit-form-success-message"] p span {
+  text-align: center !important;
+}
 
 #comp-mtamajq2 {
   --form-green: #2D4A32;

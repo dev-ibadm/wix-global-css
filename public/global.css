@@ -158,11 +158,9 @@ span {
 
 /* SUBSCRIBE CHECKBOX: reset Wix's 12-column inline placement to one full-width column */
 #comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq {
-	display: grid !important;
-	width: 100% !important;
 	grid-template-columns: minmax(0, 1fr) !important;
 	row-gap: 0 !important;
-	margin-top: 14px !important;
+	margin-top: 0 !important;
 }
 
 #comp-mtaluk7n .ckHV4G > div:nth-child(2) > .GLWhGq > div {

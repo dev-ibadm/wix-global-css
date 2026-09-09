@@ -704,9 +704,6 @@ span {
 }
 
 @media (max-width: 1024px) {
-	.divider {
-		max-width: 100% !important;
-	}
 	#comp-mta7njn0 {
 		padding: 0;
 	}

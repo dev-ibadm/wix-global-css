@@ -38,3 +38,16 @@ window.addEventListener('message', e => {
 
   requestAnimationFrame(move);
 });
+
+window.addEventListener('message', e => {
+  if (e.data?.type !== 'IFRAME_HEIGHT') return;
+
+  const iframe = document.querySelector('#comp-mtaeju8d iframe');
+  if (!iframe) return;
+
+  const h = e.data.height + 'px';
+
+  iframe.style.height = h;
+  iframe.parentElement.style.height = h;
+  iframe.closest('.html-component')?.style.setProperty('height', h);
+});

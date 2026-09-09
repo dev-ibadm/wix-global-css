@@ -17,28 +17,24 @@ window.addEventListener('message', function (event) {
 window.addEventListener('message', e => {
   if (e.data?.type !== 'EG_SCROLL') return;
 
-  const id = e.data.target?.slice(1);
-  const el = id && document.getElementById(id);
-
+  const el = document.getElementById((e.data.target || '').slice(1));
   if (!el) return;
 
-  const header = document.querySelector('header')?.offsetHeight || 0;
-  const start = scrollY;
-  const end = el.getBoundingClientRect().top + start - header;
-  const distance = end - start;
+  const from = window.scrollY;
+  const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+  const to = el.getBoundingClientRect().top + from - offset;
+  const distance = to - from;
+  const start = performance.now();
   const duration = Math.min(2000, Math.max(900, Math.abs(distance) * .4));
-  const begin = performance.now();
 
-  function scroll(now) {
-    const p = Math.min((now - begin) / duration, 1);
-    const ease = p < .5
-      ? 4 * p * p * p
-      : 1 - Math.pow(-2 * p + 2, 3) / 2;
+  function move(now) {
+    const p = Math.min((now - start) / duration, 1);
+    const ease = p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
 
-    window.scrollTo(0, start + distance * ease);
+    window.scrollTo(0, from + distance * ease);
 
-    if (p < 1) requestAnimationFrame(scroll);
+    if (p < 1) requestAnimationFrame(move);
   }
 
-  requestAnimationFrame(scroll);
+  requestAnimationFrame(move);
 });

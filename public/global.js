@@ -39,15 +39,27 @@ window.addEventListener('message', e => {
   requestAnimationFrame(move);
 });
 
+
+
+
 window.addEventListener('message', e => {
-  if (e.data?.type !== 'IFRAME_HEIGHT') return;
+  if (e.data?.type !== 'WIX_AUTO_HEIGHT') return;
 
-  const iframe = document.querySelector('#comp-mtaeju8d iframe');
-  if (!iframe) return;
+  const iframe = [...document.querySelectorAll('iframe')]
+    .find(frame => frame.contentWindow === e.source);
 
-  const h = e.data.height + 'px';
+  if (
+    !iframe ||
+    iframe.closest('header, #SITE_HEADER, #SITE_HEADER_WRAPPER')
+  ) return;
 
-  iframe.style.height = h;
-  iframe.parentElement.style.height = h;
-  iframe.closest('.html-component')?.style.setProperty('height', h);
+  const h = Number(e.data.height);
+  if (!h) return;
+
+  const height = `${h}px`;
+
+  iframe.style.setProperty('height', height, 'important');
+  iframe.parentElement?.style.setProperty('height', height, 'important');
+  iframe.closest('wix-iframe')?.style.setProperty('height', height, 'important');
+  iframe.closest('.html-component')?.style.setProperty('height', height, 'important');
 });

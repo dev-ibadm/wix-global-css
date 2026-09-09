@@ -256,7 +256,15 @@ span {
 	hyphens: none !important;
 }
 
-/* card */
+#comp-mtaluk7n [data-hook="label-wrapper"],
+#comp-mtaluk7n [data-hook="ricos-viewer"],
+#comp-mtaluk7n [data-hook="ricos-viewer"] > div {
+	display: block !important;
+	width: 100% !important;
+	max-width: none !important;
+	min-width: 0 !important;
+	box-sizing: border-box !important;
+}
 
 #comp-mt7j44ae #comp-mt9xt3an,
 #comp-mt7j44ae #comp-mt9wxaol,

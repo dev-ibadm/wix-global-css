@@ -44,7 +44,10 @@ window.addEventListener('message', e => {
 window.addEventListener('message', e => {
   if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
-  const iframe = document.querySelector('#comp-mtaeju8d iframe');
+  const iframe = [...document.querySelectorAll(
+    '#comp-mtaeju8d iframe, #comp-mtcgqknb iframe'
+  )].find(frame => frame.contentWindow === e.source);
+
   if (!iframe) return;
 
   const h = e.data.height + 'px';

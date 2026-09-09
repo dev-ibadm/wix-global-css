@@ -11,6 +11,10 @@
 	padding: 35px 0;
 }
 
+#comp-mtmwfu2j iframe {
+	height: 20px !important;
+}
+
 footer p, footer a {
    color: rgba(232,223,208,0.7) !important;
 }

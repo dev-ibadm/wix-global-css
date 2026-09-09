@@ -872,3 +872,12 @@ span {
 		margin: 0 !important;
 	}
 }
+
+@media (max-width: 549px) {
+	#comp-mtaluk7n [data-hook="checkbox-core"] .sbs_25L {
+	  width: 298px !important;
+	}
+	#comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] p span {
+  		font-size: 13px;
+	}
+}

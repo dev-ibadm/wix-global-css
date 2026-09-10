@@ -56,3 +56,65 @@ window.addEventListener('message', e => {
   iframe.parentElement.style.height = h;
   iframe.closest('.html-component')?.style.setProperty('height', h);
 });
+
+
+
+
+
+(() => {
+  const upgrade = img => {
+    const src = img.getAttribute('src') || '';
+
+    if (!src.includes('static.wixstatic.com/media/')) return;
+
+    const match = src.match(/w_(\d+),h_(\d+)/);
+    if (!match) return;
+
+    const w = +match[1];
+    const h = +match[2];
+
+    const url = scale => {
+      let u = src.replace(
+        /w_\d+,h_\d+/,
+        `w_${w * scale},h_${h * scale}`
+      );
+
+      if (/q_\d+/.test(u)) {
+        u = u.replace(/q_\d+/, 'q_90');
+      }
+
+      return u;
+    };
+
+    const srcset =
+      `${url(1)} 1x, ${url(2)} 2x, ${url(3)} 3x`;
+
+    if (img.srcset !== srcset) {
+      img.srcset = srcset;
+    }
+  };
+
+  const run = root => {
+    if (root.matches?.('img')) upgrade(root);
+    root.querySelectorAll?.('img').forEach(upgrade);
+  };
+
+  run(document);
+
+  new MutationObserver(mutations => {
+    mutations.forEach(m => {
+      if (m.type === 'attributes') {
+        upgrade(m.target);
+      }
+
+      m.addedNodes.forEach(node => {
+        if (node.nodeType === 1) run(node);
+      });
+    });
+  }).observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['src']
+  });
+})();

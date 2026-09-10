@@ -62,7 +62,7 @@ window.addEventListener('message', e => {
 
 
 (() => {
-  const upgrade = img => {
+  const fix = img => {
     const src = img.getAttribute('src') || '';
 
     if (!src.includes('static.wixstatic.com/media/')) return;
@@ -73,48 +73,22 @@ window.addEventListener('message', e => {
     const w = +match[1];
     const h = +match[2];
 
-    const url = scale => {
-      let u = src.replace(
-        /w_\d+,h_\d+/,
-        `w_${w * scale},h_${h * scale}`
-      );
+    if (w >= 1000) return;
 
-      if (/q_\d+/.test(u)) {
-        u = u.replace(/q_\d+/, 'q_90');
-      }
+    const high = src
+      .replace(/w_\d+,h_\d+/, `w_${w * 3},h_${h * 3}`)
+      .replace(/q_\d+/, 'q_90');
 
-      return u;
-    };
-
-    const srcset =
-      `${url(1)} 1x, ${url(2)} 2x, ${url(3)} 3x`;
-
-    if (img.srcset !== srcset) {
-      img.srcset = srcset;
-    }
+    img.srcset = high + ' 1x';
+    img.src = high;
   };
 
-  const run = root => {
-    if (root.matches?.('img')) upgrade(root);
-    root.querySelectorAll?.('img').forEach(upgrade);
-  };
+  const run = () => document.querySelectorAll('img').forEach(fix);
 
-  run(document);
+  run();
 
-  new MutationObserver(mutations => {
-    mutations.forEach(m => {
-      if (m.type === 'attributes') {
-        upgrade(m.target);
-      }
-
-      m.addedNodes.forEach(node => {
-        if (node.nodeType === 1) run(node);
-      });
-    });
-  }).observe(document.documentElement, {
+  new MutationObserver(run).observe(document.body, {
     childList: true,
-    subtree: true,
-    attributes: true,
-    attributeFilter: ['src']
+    subtree: true
   });
 })();

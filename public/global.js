@@ -60,35 +60,70 @@ window.addEventListener('message', e => {
 
 
 
-
 (() => {
-  const fix = img => {
+  const fixImage = img => {
+    if (!(img instanceof HTMLImageElement)) return;
+
     const src = img.getAttribute('src') || '';
 
     if (!src.includes('static.wixstatic.com/media/')) return;
 
-    const match = src.match(/w_(\d+),h_(\d+)/);
+    const match = src.match(/\/w_(\d+),h_(\d+),/);
     if (!match) return;
 
-    const w = +match[1];
-    const h = +match[2];
+    const w = Number(match[1]);
+    const h = Number(match[2]);
 
+    // Already upgraded
     if (w >= 1000) return;
 
-    const high = src
-      .replace(/w_\d+,h_\d+/, `w_${w * 3},h_${h * 3}`)
+    const scale = 3;
+
+    const newSrc = src
+      .replace(
+        /\/w_\d+,h_\d+,/,
+        `/w_${w * scale},h_${h * scale},`
+      )
       .replace(/q_\d+/, 'q_90');
 
-    img.srcset = high + ' 1x';
-    img.src = high;
+    if (src !== newSrc) {
+      img.removeAttribute('srcset');
+      img.src = newSrc;
+    }
   };
 
-  const run = () => document.querySelectorAll('img').forEach(fix);
+  const scan = root => {
+    if (root instanceof HTMLImageElement) fixImage(root);
+    root.querySelectorAll?.('img').forEach(fixImage);
+  };
 
-  run();
+  const start = () => {
+    scan(document);
 
-  new MutationObserver(run).observe(document.body, {
-    childList: true,
-    subtree: true
-  });
+    new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (
+          mutation.type === 'attributes' &&
+          mutation.target instanceof HTMLImageElement
+        ) {
+          fixImage(mutation.target);
+        }
+
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) scan(node);
+        });
+      });
+    }).observe(document.documentElement, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeFilter: ['src']
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
 })();

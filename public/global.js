@@ -41,6 +41,7 @@ window.addEventListener('message', e => {
 
 
 
+
 window.addEventListener('message', e => {
   if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
@@ -56,46 +57,3 @@ window.addEventListener('message', e => {
   iframe.parentElement.style.height = h;
   iframe.closest('.html-component')?.style.setProperty('height', h);
 });
-
-
-
-(() => {
-  const ids = [
-    '#comp-mtaeju8d',
-    '#comp-mtcgqknb',
-    '#comp-mt7evu7d'
-  ];
-
-  window.addEventListener('message', e => {
-    if (e.data?.type !== 'IFRAME_HEIGHT') return;
-
-    const h = Math.ceil(Number(e.data.height));
-    if (!h || h > 20000) return;
-
-    const iframe = [...document.querySelectorAll(
-      ids.map(id => `${id} iframe`).join(',')
-    )].find(el => el.contentWindow === e.source);
-
-    if (!iframe) return;
-
-    const component = ids
-      .map(id => iframe.closest(id))
-      .find(Boolean);
-
-    const height = `${h}px`;
-
-    requestAnimationFrame(() => {
-      let el = iframe;
-
-      while (el) {
-        el.style.setProperty('height', height, 'important');
-        el.style.setProperty('min-height', '0', 'important');
-
-        if (el === component) break;
-        el = el.parentElement;
-      }
-
-      iframe.style.setProperty('display', 'block', 'important');
-    });
-  });
-})();

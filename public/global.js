@@ -45,15 +45,24 @@ window.addEventListener('message', e => {
 window.addEventListener('message', e => {
   if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
-  const iframe = [...document.querySelectorAll(
+  const frames = [...document.querySelectorAll(
     '#comp-mtaeju8d iframe, #comp-mtcgqknb iframe, #comp-mt7evu7d iframe'
-  )].find(frame => frame.contentWindow === e.source);
+  )];
+  if (!frames.length) { console.warn('No iframes found for selectors'); return; }
 
-  if (!iframe) return;
-
+  let iframe = frames.find(f => f.contentWindow === e.source) || frames[0];
   const h = e.data.height + 'px';
+  console.log('height received:', h, iframe);
 
-  iframe.style.height = h;
-  iframe.parentElement.style.height = h;
-  iframe.closest('.html-component')?.style.setProperty('height', h);
+  iframe.style.setProperty('height', h, 'important');
+
+  const wixIframe = iframe.closest('.wix-iframe');
+  if (wixIframe) wixIframe.style.setProperty('height', h, 'important');
+
+  const htmlComp = iframe.closest('.html-component');
+  if (htmlComp) htmlComp.style.setProperty('height', h, 'important');
+
+  // parent section/grid item bhi (Wix grid stretch ko override karne ke liye)
+  const gridItem = iframe.closest('[data-testid="internal-container-content"]')?.parentElement;
+  if (gridItem) gridItem.style.setProperty('height', h, 'important');
 });

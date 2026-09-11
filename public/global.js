@@ -59,71 +59,43 @@ window.addEventListener('message', e => {
 
 
 
-
 (() => {
-  const fixImage = img => {
-    if (!(img instanceof HTMLImageElement)) return;
+  const ids = [
+    '#comp-mtaeju8d',
+    '#comp-mtcgqknb',
+    '#comp-mt7evu7d'
+  ];
 
-    const src = img.getAttribute('src') || '';
+  window.addEventListener('message', e => {
+    if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
-    if (!src.includes('static.wixstatic.com/media/')) return;
+    const h = Math.ceil(Number(e.data.height));
+    if (!h || h > 20000) return;
 
-    const match = src.match(/\/w_(\d+),h_(\d+),/);
-    if (!match) return;
+    const iframe = [...document.querySelectorAll(
+      ids.map(id => `${id} iframe`).join(',')
+    )].find(el => el.contentWindow === e.source);
 
-    const w = Number(match[1]);
-    const h = Number(match[2]);
+    if (!iframe) return;
 
-    // Already upgraded
-    if (w >= 1000) return;
+    const component = ids
+      .map(id => iframe.closest(id))
+      .find(Boolean);
 
-    const scale = 3;
+    const height = `${h}px`;
 
-    const newSrc = src
-      .replace(
-        /\/w_\d+,h_\d+,/,
-        `/w_${w * scale},h_${h * scale},`
-      )
-      .replace(/q_\d+/, 'q_90');
+    requestAnimationFrame(() => {
+      let el = iframe;
 
-    if (src !== newSrc) {
-      img.removeAttribute('srcset');
-      img.src = newSrc;
-    }
-  };
+      while (el) {
+        el.style.setProperty('height', height, 'important');
+        el.style.setProperty('min-height', '0', 'important');
 
-  const scan = root => {
-    if (root instanceof HTMLImageElement) fixImage(root);
-    root.querySelectorAll?.('img').forEach(fixImage);
-  };
+        if (el === component) break;
+        el = el.parentElement;
+      }
 
-  const start = () => {
-    scan(document);
-
-    new MutationObserver(mutations => {
-      mutations.forEach(mutation => {
-        if (
-          mutation.type === 'attributes' &&
-          mutation.target instanceof HTMLImageElement
-        ) {
-          fixImage(mutation.target);
-        }
-
-        mutation.addedNodes.forEach(node => {
-          if (node.nodeType === 1) scan(node);
-        });
-      });
-    }).observe(document.documentElement, {
-      subtree: true,
-      childList: true,
-      attributes: true,
-      attributeFilter: ['src']
+      iframe.style.setProperty('display', 'block', 'important');
     });
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', start);
-  } else {
-    start();
-  }
+  });
 })();

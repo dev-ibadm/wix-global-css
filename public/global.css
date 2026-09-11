@@ -7,6 +7,10 @@
 	display: none !important;
 }
 
+section .html-component {
+	margin-bottom: 0 !important;
+}
+
 #comp-mta7njn0 {
 	padding: 35px 0;
 }

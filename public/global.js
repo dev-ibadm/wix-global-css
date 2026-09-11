@@ -41,6 +41,7 @@ window.addEventListener('message', e => {
 
 
 
+
 window.addEventListener('message', e => {
   if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
@@ -55,11 +56,10 @@ window.addEventListener('message', e => {
 
   iframe.style.height = h;
 
-  let el = iframe;
-  while (el && !el.classList?.contains('html-component')) {
-    el.style.height = h;
-    el = el.parentElement;
-  }
-  // html-component (outer wix wrapper) bhi
-  if (el) el.style.height = h;
+  // sirf ye 2 specific wrappers, poora chain nahi
+  const wixIframe = iframe.closest('.wix-iframe');
+  if (wixIframe) wixIframe.style.height = h;
+
+  const htmlComp = iframe.closest('.html-component');
+  if (htmlComp) htmlComp.style.height = h;
 });

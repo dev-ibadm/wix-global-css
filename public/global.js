@@ -52,6 +52,14 @@ window.addEventListener('message', e => {
   if (!iframe) return;
 
   const h = e.data.height + 'px';
+
   iframe.style.height = h;
-  iframe.parentElement.style.height = h;
+
+  let el = iframe;
+  while (el && !el.classList?.contains('html-component')) {
+    el.style.height = h;
+    el = el.parentElement;
+  }
+  // html-component (outer wix wrapper) bhi
+  if (el) el.style.height = h;
 });

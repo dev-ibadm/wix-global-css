@@ -45,21 +45,15 @@ window.addEventListener('message', e => {
 window.addEventListener('message', e => {
   if (e.data?.type !== 'IFRAME_HEIGHT') return;
 
-  const frames = [...document.querySelectorAll(
+  const iframe = [...document.querySelectorAll(
     '#comp-mtaeju8d iframe, #comp-mtcgqknb iframe, #comp-mt7evu7d iframe'
-  )];
+  )].find(frame => frame.contentWindow === e.source);
 
-  let iframe = frames.find(f => f.contentWindow === e.source) || frames[0];
   if (!iframe) return;
 
   const h = e.data.height + 'px';
 
   iframe.style.height = h;
-
-  // sirf ye 2 specific wrappers, poora chain nahi
-  const wixIframe = iframe.closest('.wix-iframe');
-  if (wixIframe) wixIframe.style.height = h;
-
-  const htmlComp = iframe.closest('.html-component');
-  if (htmlComp) htmlComp.style.height = h;
+  iframe.parentElement.style.height = h;
+  iframe.closest('.html-component')?.style.setProperty('height', h);
 });

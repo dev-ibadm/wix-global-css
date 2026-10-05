@@ -193,18 +193,6 @@ span {
 	margin: auto;
 }
 
-#comp-mtaluk7n [data-hook="checkbox-core"] {
-	justify-content: flex-start !important;
-	gap: 10px !important;
-	width: fit-content;
-	margin: auto;
-	align-content: center;
-	max-width: none !important;
-	min-width: 0 !important;
-	box-sizing: border-box !important;
-}
-
-/* CHECKBOX */
 #comp-mtaluk7n [data-hook="checkbox-core"] .sN2iaUw {
 	width: 18px !important;
 	height: 18px !important;
@@ -911,7 +899,7 @@ span {
 	width: fit-content !important;
 	max-width: 100% !important;
 	min-width: 0 !important;
-	margin: 8px auto 0 !important;
+	margin: 0 !important;
 	padding: 0 !important;
 	box-sizing: border-box !important;
 	text-transform: none !important;
@@ -983,13 +971,7 @@ span {
 	hyphens: none !important;
 }
 
-/* Keep the row stable on small screens too */
 @media (max-width: 549px) {
-	#comp-mtpmzy1k [data-hook="checkbox-core"] {
-		gap: 7px !important;
-		margin-top: 8px !important;
-	}
-
 	#comp-mtpmzy1k [data-field-type="CONTACTS_SUBSCRIBE"] p,
 	#comp-mtpmzy1k [data-field-type="CONTACTS_SUBSCRIBE"] p span {
 		font-size: 12px !important;

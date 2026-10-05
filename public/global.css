@@ -186,10 +186,11 @@ span {
 }
 
 #comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] > div, #comp-mtaluk7n [data-field-type="CONTACTS_SUBSCRIBE"] [data-hook="checkbox-wrapper"] {
-	width: 100% !important;
+	width: 81% !important;
 	max-width: none !important;
 	min-width: 0 !important;
 	box-sizing: border-box !important;
+	margin: auto;
 }
 
 #comp-mtaluk7n [data-hook="checkbox-core"] {

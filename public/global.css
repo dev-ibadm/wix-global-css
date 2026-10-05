@@ -53,16 +53,6 @@ span {
 	border: 0 !important;
 }
 
-#comp-mtaluk7n form,
-#comp-mtaluk7n fieldset,
-#comp-mtaluk7n [data-hook="form-root"],
-#comp-mtaluk7n .ckHV4G {
-	width: 100% !important;
-	max-width: none !important;
-	min-width: 0 !important;
-	box-sizing: border-box !important;
-}
-
 #comp-mtaluk7n .ckHV4G > div:first-child > .GLWhGq {
 	display: grid !important;
 	width: 100% !important;

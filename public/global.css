@@ -861,13 +861,7 @@ span {
 	}
 }
 
-/* =========================================================
-   NEWSLETTER FORM — checkbox alignment fix
-   Scoped only to #comp-mtpmzy1k
-   ========================================================= */
-
-/* Remove Wix error-wrapper border/padding around the email input */
-#comp-mtpmzy1k .svEXDbE.ojL_C1u--error.srLCoTH.oNTzDv_---theme-3-box {
+#comp-mtpmzy1k .svEXDbE.srLCoTH.oNTzDv_---theme-3-box {
 	border: 0 !important;
 	padding: 0 !important;
 }
